@@ -1,0 +1,290 @@
+/***************************************************************************************************************************************/
+/**************************************************************************************************************************************/
+/**********************************************     Mobile version under 700px     ***************************************************/
+.mobile-top {
+	display: none;
+}
+.mobile-container {
+	display: none;
+}
+.mobile-text-bot {
+	display: none;
+}
+@media (max-width: 41em) {
+	html,
+	body {
+		overflow: auto;
+		overflow-y: scroll;
+	}
+	.mobile-container {
+		display: inline-block;
+	}
+	.container {
+		display: none; /* This is to remvove the navbar used for the normal application */
+	}
+	.container1 {
+		flex-wrap: wrap;
+	}
+	.logo {
+		width: 15.625rem;
+		height: 15.625rem;
+		grid-row: 1/2;
+		grid-column: 1/2;
+		align-self: flex-start;
+		position: relative;
+		top: -35%;
+		left: 5%;
+	}
+	.logo-txt {
+		position: relative;
+		justify-self: center;
+		font-size: 1.25rem;
+		letter-spacing: 0.18rem;
+		color: #db0047;
+		grid-row: 2/3;
+		grid-column: 1/2;
+		justify-self: baseline;
+		position: relative;
+		left: 10%;
+		top: -145%;
+		font-weight: 700;
+	}
+	.mobile-about {
+		color: #f28531;
+	}
+	.about:visited {
+		color: #f28531;
+	}
+	.mobile-about {
+		color: #f28531;
+		z-index: 1;
+		grid-row: 1/2;
+		grid-column: 2/3;
+		justify-self: center;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact {
+		color: #db0047;
+		grid-row: 1/2;
+		grid-column: 3/4;
+		justify-self: flex-end;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact:visited {
+		color: #db0047;
+	}
+
+	.mobile-top {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+	}
+	.footer {
+		bottom: 0;
+	}
+
+	/* Sidebar */
+	.mobile-container {
+		position: relative;
+		top: -15rem;
+	}
+	.sidebar {
+		width: 200px;
+		background-color: #fff0ed;
+		padding: 10px;
+		height: 300px;
+		overflow: hidden;
+	}
+
+	.dots1 {
+		display: flex;
+		justify-content: center;
+		z-index: 3;
+		width: 60px;
+		height: 60px;
+		position: relative;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+		background-color: #db0047;
+		border-radius: 50%;
+		margin: 0 2px;
+		cursor: pointer;
+		position: relative;
+		top: 50%;
+	}
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		position: relative;
+		left: 0.5rem;
+	}
+
+	.links a {
+		display: flex;
+		align-items: center;
+		z-index: 3;
+		width: fit-content;
+	}
+
+	.links img {
+		width: 40px;
+		height: 40px;
+	}
+	.dot {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.rotate {
+		transform: rotate(90deg);
+	}
+
+	.links {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.hide {
+		transform: translateY(-130%);
+	}
+
+	.links-text {
+		transform: rotate(90deg);
+		position: relative;
+		top: 16rem;
+		left: -6.3rem;
+		color: #f28531;
+		font-size: 1.2rem;
+	}
+	a:link {
+		font-size: 1.5rem;
+	}
+
+	/* Removing all Animations */
+	/* All animations above became none */
+	.section {
+		display: grid;
+		position: relative;
+		top: -450px;
+	}
+	.big-circle {
+		justify-self: flex-end;
+		right: -10%;
+		top: 10%;
+	}
+	.lili-pic {
+		content: url("../Images/lili's\ pic-modified-mobbile.png");
+		top: -10%;
+	}
+
+	.line1 {
+		display: none;
+	}
+	.line2 {
+		display: none;
+	}
+	.line3 {
+		display: none;
+	}
+	.line4 {
+		display: none;
+	}
+	.line5 {
+		display: none;
+	}
+	.line6 {
+		display: none;
+	}
+	.line7 {
+		display: none;
+	}
+	.line8 {
+		display: none;
+	}
+	.line9 {
+		display: none;
+	}
+	.mobile-text-bot {
+		display: block;
+	}
+	.about-text {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		font-size: 5rem;
+	}
+	p {
+		font-size: 5rem;
+		font-weight: 300;
+	}
+	span {
+		font-size: 5rem;
+		font-weight: 700;
+	}
+	.hi-span {
+		font-size: 7rem;
+	}
+}
+
+@media (max-width: 28em) {
+	.mobile-about {
+		justify-self: center;
+	}
+	html {
+		font-size: 10px;
+	}
+	.links-text {
+		top: 17rem;
+		left: -6.85rem;
+	}
+	a:link {
+		font-size: 1.4rem;
+	}
+	.right-dot {
+		left: 5.4rem;
+		top: 0.1rem;
+	}
+	.left-dot {
+		left: -5.4rem;
+		top: 0rem;
+	}
+}
+@media (max-width: 21.25em) {
+	html {
+		font-size: 9px;
+	}
+	.mobile-about {
+		justify-self: baseline;
+	}
+	.animated-text {
+		font-size: 1.1rem;
+	}
+	.footer {
+		top: -10rem;
+	}
+	.links-text {
+		top: 19rem;
+		left: -7.7rem;
+	}
+	.big-circle {
+		width: 25rem;
+		height: 25rem;
+		margin-bottom: 60px;
+	}
+	.lili-pic {
+		width: 25rem;
+		height: 25rem;
+	}
+}

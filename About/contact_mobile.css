@@ -1,0 +1,307 @@
+/***************************************************************************************************************************************/
+/**************************************************************************************************************************************/
+/**********************************************     Mobile version under 700px     ***************************************************/
+.mobile-top {
+	display: none;
+}
+.mobile-container {
+	display: none;
+}
+@media (max-width: 41em) {
+	html,
+	body {
+		overflow: auto;
+		overflow-y: scroll;
+	}
+	.mobile-container {
+		display: inline-block;
+	}
+	.container {
+		display: none; /* This is to remvove the navbar used for the normal application */
+	}
+	.container1 {
+		flex-wrap: wrap;
+	}
+	.logo {
+		width: 15.625rem;
+		height: 15.625rem;
+		grid-row: 1/2;
+		grid-column: 1/2;
+		align-self: flex-start;
+		position: relative;
+		top: -35%;
+		left: 5%;
+	}
+	.logo-txt {
+		position: relative;
+		justify-self: center;
+		font-size: 1.25rem;
+		letter-spacing: 0.18rem;
+		color: #db0047;
+		grid-row: 2/3;
+		grid-column: 1/2;
+		justify-self: baseline;
+		position: relative;
+		left: 10%;
+		top: -145%;
+	}
+	.about:visited {
+		color: #db0047;
+	}
+	.mobile-about {
+		color: #db0047;
+		z-index: 1;
+		grid-row: 1/2;
+		grid-column: 2/3;
+		justify-self: center;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact {
+		color: #f28531;
+		grid-row: 1/2;
+		grid-column: 3/4;
+		justify-self: flex-end;
+		position: relative;
+		top: 5%;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+	.contact:visited {
+		color: #f28531;
+	}
+
+	.mobile-top {
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+	}
+	.footer {
+		bottom: 0;
+	}
+
+	/* Sidebar */
+	.mobile-container {
+		position: relative;
+		top: -15rem;
+	}
+	.sidebar {
+		width: 200px;
+		background-color: #fff0ed;
+		padding: 10px;
+		height: 300px;
+		overflow: hidden;
+	}
+
+	.dots1 {
+		display: flex;
+		justify-content: center;
+		z-index: 3;
+		width: 60px;
+		height: 60px;
+		position: relative;
+	}
+
+	.dot {
+		width: 10px;
+		height: 10px;
+		background-color: #db0047;
+		border-radius: 50%;
+		margin: 0 2px;
+		cursor: pointer;
+		position: relative;
+		top: 50%;
+	}
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		position: relative;
+		left: 0.5rem;
+	}
+
+	.links a {
+		display: flex;
+		align-items: center;
+		z-index: 3;
+		width: fit-content;
+	}
+
+	.links img {
+		width: 40px;
+		height: 40px;
+	}
+	.dot {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.rotate {
+		transform: rotate(90deg);
+	}
+
+	.links {
+		/* ... existing styles ... */
+		transition: transform 0.3s ease;
+	}
+
+	.hide {
+		transform: translateY(-130%);
+	}
+
+	.links-text {
+		transform: rotate(90deg);
+		position: relative;
+		top: 12rem;
+		left: -6.3rem;
+		color: #f28531;
+		font-size: 1.2rem;
+	}
+	a:link {
+		font-size: 1.5rem;
+	}
+
+	/* Removing all Animations */
+	/* All animations above became none */
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+		align-content: center;
+		position: relative;
+		top: -380px;
+	}
+	h2 {
+		animation: none;
+		font-size: 8rem;
+	}
+	.section1 {
+		animation: none;
+		width: 100%;
+	}
+	.h2 {
+		left: 10%;
+		margin-left: 10%;
+		animation: colorchange 1s ease-in-out infinite;
+	}
+	h1 {
+		font-size: 2.8rem;
+	}
+	.section2 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	form {
+		width: 50%;
+		margin-left: 10%;
+	}
+	#name {
+		width: 100%;
+	}
+	#email {
+		width: 100%;
+	}
+	#message {
+		width: 100%;
+		padding-bottom: 70%;
+	}
+	label {
+		color: #db0047;
+	}
+	.send {
+		left: 70%;
+	}
+	.send-msg-text {
+		left: 10%;
+		margin-left: 10%;
+	}
+	.section3 {
+		display: flex;
+		gap: 30px;
+	}
+	.grid-text {
+		display: none;
+	}
+	.grid-img {
+		margin: 0;
+		padding: 0;
+	}
+	.grid-cam {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	.grid-be {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	.grid-mail {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	.grid-phone {
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+	.links-text-h2 {
+		color: #f28531;
+		font-size: 1.5em;
+		font-weight: 700;
+		top: 0;
+	}
+}
+
+@media (max-width: 28em) {
+	.mobile-about {
+		justify-self: center;
+	}
+	html {
+		font-size: 10px;
+	}
+	.links-text {
+		top: 13rem;
+		left: -6.85rem;
+	}
+	a:link {
+		font-size: 1.4rem;
+	}
+	.right-dot {
+		left: 5.4rem;
+		top: 0.1rem;
+	}
+	.left-dot {
+		left: -5.4rem;
+		top: 0rem;
+	}
+}
+@media (max-width: 21.25em) {
+	html {
+		font-size: 9px;
+	}
+	.mobile-about {
+		justify-self: baseline;
+	}
+	.animated-text {
+		font-size: 1.1rem;
+	}
+	.footer {
+		top: -10rem;
+	}
+	.links-text {
+		top: 14rem;
+		left: -7.7rem;
+	}
+}
