@@ -1,0 +1,779 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: fit-content;
+	/* overflow-y: hidden; */
+}
+body {
+	background-color: #fff0ed;
+	font-family: 'Barlow', sans-serif;
+	color: #db0047;
+}
+main {
+	height: 100%;
+}
+p {
+	font-weight: 700;
+}
+.container {
+	display: grid;
+	width: auto;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
+}
+img {
+	width: 6.25rem;
+}
+
+.logo {
+	position: relative;
+	grid-column: -1;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
+}
+.logo-txt {
+	position: relative;
+
+	grid-column: -1;
+	grid-row: 2;
+	justify-self: center;
+	font-size: 1.2rem;
+	letter-spacing: 0.19rem;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
+	color: #db0047;
+}
+.logos-text {
+	font-size: 1.25rem;
+}
+a:link {
+	color: #db0047;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	font-size: 1.0625rem;
+	text-decoration: none;
+}
+
+.about:visited {
+	color: #db0047;
+}
+.about {
+	grid-column: -1;
+	grid-row: 3;
+	text-align: right;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
+	color: #db0047;
+	z-index: 1;
+	position: relative;
+	top: -0.625rem;
+}
+.contact {
+	grid-column: -1;
+	grid-row: 4;
+	text-align: right;
+	margin-right: 3.125rem;
+	color: #e12c65;
+	position: relative;
+	top: -1.5625rem;
+	z-index: 1;
+}
+.contact:visited {
+	color: #e12c65;
+}
+
+.image-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 0;
+	color: #f28531;
+}
+.cam {
+	position: relative;
+	top: -0.3125rem;
+}
+.box {
+	position: absolute;
+	left: 2rem;
+	top: 1.5rem;
+	width: 2.25rem;
+}
+
+.box:hover {
+	cursor: pointer;
+
+	content: url('../SVG/box-clicked.png');
+}
+.o:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-29.svg');
+}
+.cam:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-30.svg');
+}
+.arrow:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-31.svg');
+}
+.sheets:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-32.svg');
+}
+.o-container:hover .image-text {
+	animation: drop-down-o 0.3s ease-in forwards;
+}
+.cam-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.arrow-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.sheets-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.box-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+
+.o-container:not(:hover) .image-text {
+	animation: rise-up-o 0.3s ease-out forwards;
+}
+.cam-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.arrow-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.sheets-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.box-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+@keyframes drop-down {
+	0% {
+		top: 6.5rem;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up {
+	0% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+
+@keyframes drop-down-o {
+	0% {
+		top: 6.5rem;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 7rem;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up-o {
+	0% {
+		top: 7rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+.logos-text {
+	font-size: 1.25rem;
+}
+
+.box-text {
+	left: 0.1rem;
+}
+.o-text {
+	left: 4rem;
+}
+.arrow-text {
+	left: 11rem;
+}
+.sheets-text {
+	left: 15rem;
+}
+.cam-text {
+	left: 6.8rem;
+}
+/* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
+.o-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 1;
+	color: #f28531;
+	top: 6.8rem;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+footer {
+	position: relative;
+	bottom: 0rem;
+}
+.footer {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 6fr 6fr 1fr 1fr 1fr 6fr 6fr;
+	grid-template-rows: 6rem 6rem;
+	justify-items: center;
+	align-items: center;
+	width: auto;
+}
+
+.footer-text {
+	position: relative;
+	grid-column: 1/-1;
+	grid-row: 1;
+	color: #f28531;
+	font-weight: 700;
+	align-self: flex-end;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
+	text-transform: lowercase;
+}
+.insta {
+	position: relative;
+	grid-row: 2;
+	grid-column: 3;
+	left: 2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.be {
+	grid-row: 2;
+	grid-column: 4;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.mail {
+	position: relative;
+	grid-row: 2;
+	grid-column: 5;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.dots {
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	background-color: #db0047;
+	margin: 0 0.3125rem;
+	grid-row: 1;
+	grid-column: 1/-1;
+	position: relative;
+	align-self: flex-end;
+	bottom: -0.125rem;
+	text-transform: lowercase;
+}
+
+.left-dot {
+	left: -5.3125rem;
+}
+
+.right-dot {
+	left: 5.3125rem;
+}
+/*  The above css is the template for all pages on this website */
+
+/* This part will cover the css for the section 1 which containes the animated image and text */
+.section1 {
+	height: 31.25rem;
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	position: relative;
+	top: -6.25rem;
+}
+.img-animation-div {
+	width: 62.5rem;
+}
+.animated-img1 {
+	width: 28.125rem;
+	height: 25rem;
+	position: relative;
+	left: 14.125rem;
+}
+
+.animated-img2 {
+	width: 28.125rem;
+	height: 25rem;
+	position: relative;
+	right: 14.125rem;
+	z-index: -1;
+}
+
+@keyframes move-left1 {
+	0% {
+		left: 14.125rem;
+	}
+	100% {
+		left: 0.125rem;
+	}
+}
+
+@keyframes move-right1 {
+	0% {
+		left: 0.125rem;
+	}
+	100% {
+		left: 14.125rem;
+	}
+}
+
+.img-animation-div:hover .animated-img1 {
+	animation: move-left1 0.2s ease-in forwards;
+}
+
+.img-animation-div:not(:hover) .animated-img1 {
+	animation: move-right1 0.2s ease-in forwards;
+}
+
+/* The second image animation */
+@keyframes move-left2 {
+	0% {
+		right: 0.125rem;
+	}
+	100% {
+		right: 14.125rem;
+	}
+}
+
+@keyframes move-right2 {
+	0% {
+		right: 14.125rem;
+	}
+	100% {
+		right: 0.125rem;
+	}
+}
+
+.img-animation-div:hover .animated-img2 {
+	animation: move-right2 0.2s ease-in forwards;
+}
+
+.img-animation-div:not(:hover) .animated-img2 {
+	animation: move-left2 0.2s ease-in forwards;
+}
+/* the small circles with their animations */
+.small-circle1 {
+	width: 1.5625rem;
+	height: 1.5625rem;
+	border-radius: 50%;
+	border: 0.125rem solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	left: 16.25rem;
+	top: 0.625rem;
+	z-index: 1;
+}
+
+.small-circle2 {
+	width: 1.5625rem;
+	height: 1.5625rem;
+	border-radius: 50%;
+	border: 0.125rem solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	left: 44.6875rem;
+	top: -0.9375rem;
+	z-index: 1;
+}
+
+@keyframes small-left1 {
+	0% {
+		left: 16.25rem;
+	}
+	100% {
+		left: 2.25rem;
+	}
+}
+
+@keyframes small-right1 {
+	0% {
+		left: 2.25rem;
+	}
+	100% {
+		left: 16.25rem;
+	}
+}
+
+@keyframes small-left2 {
+	0% {
+		left: 58.6875rem;
+	}
+	100% {
+		left: 44.6875rem;
+	}
+}
+
+@keyframes small-right2 {
+	0% {
+		left: 44.6875rem;
+	}
+	100% {
+		left: 58.6875rem;
+	}
+}
+
+.img-animation-div:hover .small-circle1 {
+	animation: small-left1 0.2s ease-in forwards;
+}
+.img-animation-div:not(:hover) .small-circle1 {
+	animation: small-right1 0.2s ease-in forwards;
+}
+.img-animation-div:hover .small-circle2 {
+	animation: small-right2 0.2s ease-in forwards;
+}
+.img-animation-div:not(:hover) .small-circle2 {
+	animation: small-left2 0.2s ease-in forwards;
+}
+
+.img-p-div {
+	width: 56.25rem;
+	position: relative;
+	left: 3.125rem;
+	text-align: justify;
+	opacity: 0;
+}
+
+.img-p {
+	font-weight: 300;
+	font-size: 1.25rem;
+}
+
+@keyframes show {
+	100% {
+		opacity: 1;
+	}
+}
+
+.img-animation-div:hover .img-p-div {
+	animation: show 0.2s ease-in forwards;
+}
+
+/* This part is for section 2 */
+
+.section2 {
+	align-items: center;
+	text-align: center;
+	margin-top: 5rem;
+	width: 100%;
+}
+
+.big-img {
+	height: 100%;
+	width: 100%;
+	margin-top: 1.5625rem;
+}
+
+/* section 3 */
+
+.section3 {
+	margin-top: 5rem;
+	width: 100%;
+	text-align: center;
+}
+.grid-container {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 1.5625rem;
+}
+.img1 {
+	grid-row: 1;
+	grid-column: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.img2 {
+	grid-row: 1;
+	grid-column: 2;
+	width: 100%;
+	height: 100%;
+}
+
+/* Circle animations */
+.section4 {
+	height: 37.5rem;
+	width: 100%;
+	display: grid;
+	justify-content: center;
+}
+.animation-div1 {
+	display: inline-block;
+	width: 12.3125rem;
+	height: 12.3125rem;
+	position: relative;
+	top: 9.375rem;
+	left: 2.5rem;
+}
+.animation-div2 {
+	display: inline-block;
+	width: 12.3125rem;
+	height: 12.3125rem;
+	position: relative;
+	top: 9.375rem;
+	left: 5rem;
+}
+.big-circle {
+	width: 34.375rem;
+	height: 34.375rem;
+	border-radius: 50%;
+	border: 0.125rem solid #db0047;
+	position: relative;
+	margin-top: 6.25rem;
+}
+
+.checkout {
+	font-size: 2.875rem;
+	font-weight: 300;
+	position: relative;
+	left: 11.25rem;
+	top: 5rem;
+}
+
+.white-circle1 {
+	width: 12.5rem;
+	height: 12.5rem;
+	border-radius: 50%;
+	border: 0.125rem solid #db0047;
+	position: relative;
+}
+
+.red-circle1 {
+	width: 13.125rem;
+	height: 13.125rem;
+	border-radius: 50%;
+	border: 0.125rem solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	z-index: -1;
+	top: -11.5625rem;
+	left: -0.3125rem;
+}
+
+.white-circle2 {
+	width: 12.5rem;
+	height: 12.5rem;
+	border-radius: 50%;
+	border: 0.125rem solid #db0047;
+	background-color: white;
+	position: relative;
+}
+
+.red-circle2 {
+	width: 13.125rem;
+	height: 13.125rem;
+	border-radius: 50%;
+	border: 0.125rem solid #db0047;
+	background-color: #db0047;
+	position: relative;
+	z-index: -1;
+	top: -11.5625rem;
+	left: -0.3125rem;
+}
+
+.outlaw-logo {
+	width: 12.3125rem;
+	height: 12.3125rem;
+	border-radius: 50%;
+}
+
+.lofi-logo {
+	width: 12.3125rem;
+	height: 12.3125rem;
+	border-radius: 50%;
+}
+
+@keyframes white-circle-up1 {
+	0% {
+		top: 1.25rem;
+	}
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes white-circle-down1 {
+	0% {
+		top: 0;
+	}
+	100% {
+		top: 1.25rem;
+	}
+}
+
+@keyframes white-circle-up2 {
+	0% {
+		top: 1.25rem;
+	}
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes white-circle-down2 {
+	0% {
+		top: 0rem;
+	}
+	100% {
+		top: 1.25rem;
+	}
+}
+
+@keyframes red-circle-up1 {
+	0% {
+		top: -11.5625rem;
+	}
+	100% {
+		top: -13.75rem;
+	}
+}
+
+@keyframes red-circle-down1 {
+	0% {
+		top: -13.75rem;
+	}
+	100% {
+		top: -11.5625rem;
+	}
+}
+
+.animation-div1:hover .white-circle1 {
+	animation: white-circle-down1 0.2s ease-in forwards;
+}
+
+.animation-div1:not(:hover) .white-circle1 {
+	animation: white-circle-up1 0.2s ease-in forwards;
+}
+
+.animation-div2:hover .white-circle2 {
+	animation: white-circle-down2 0.2s ease-in forwards;
+}
+
+.animation-div2:not(:hover) .white-circle2 {
+	animation: white-circle-up2 0.2s ease-in forwards;
+}
+
+/* This part is for the red circes */
+.animation-div1:hover .red-circle1 {
+	animation: red-circle-up1 0.2s ease-in forwards;
+}
+
+.animation-div1:not(:hover) .red-circle1 {
+	animation: red-circle-down1 0.2s ease-in forwards;
+}
+
+.animation-div2:hover .red-circle2 {
+	animation: red-circle-up1 0.2s ease-in forwards;
+}
+
+.animation-div2:not(:hover) .red-circle2 {
+	animation: red-circle-down1 0.2s ease-in forwards;
+}
+
+/* Media queries for responsiveness */
+/* BELOW 1168px */
+@media (max-width: 73em) {
+	html {
+		font-size: 14px;
+	}
+}
+
+/* BELOW 1016px */
+@media (max-width: 63.5em) {
+	html {
+		font-size: 12px;
+	}
+}
+
+/* BELOW 896px */
+@media (max-width: 56em) {
+	html {
+		font-size: 10px;
+	}
+}
+
+/* BELOW 720px */
+@media (max-width: 45em) {
+	html {
+		font-size: 9.5px;
+	}
+}

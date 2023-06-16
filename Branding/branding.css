@@ -1,0 +1,830 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: fit-content;
+	overflow-y: hidden;
+}
+body {
+	background-color: #fff0ed;
+	font-family: 'Barlow', sans-serif;
+	color: #db0047;
+}
+main {
+	height: 21.875rem;
+}
+p {
+	font-weight: 700;
+}
+.container {
+	display: grid;
+	width: auto;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
+}
+img {
+	width: 6.25rem;
+}
+
+.logo {
+	position: relative;
+	grid-column: -1;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
+}
+.logo-txt {
+	position: relative;
+
+	grid-column: -1;
+	grid-row: 2;
+	justify-self: center;
+	font-size: 1.2rem;
+	letter-spacing: 0.19rem;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
+	color: #db0047;
+}
+
+a:link {
+	color: #db0047;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	font-size: 1.0625rem;
+	text-decoration: none;
+}
+
+.about:visited {
+	color: #db0047;
+}
+.about {
+	grid-column: -1;
+	grid-row: 3;
+	text-align: right;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
+	color: #db0047;
+	z-index: 1;
+	position: relative;
+	top: -0.625rem;
+}
+.contact {
+	grid-column: -1;
+	grid-row: 4;
+	text-align: right;
+	margin-right: 3.125rem;
+	color: #e12c65;
+	position: relative;
+	top: -1.5625rem;
+}
+.contact:visited {
+	color: #e12c65;
+}
+
+.image-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 0;
+	color: #f28531;
+}
+.cam {
+	position: relative;
+	top: -0.3125rem;
+}
+.box {
+	position: absolute;
+	left: 2rem;
+	top: 1.5rem;
+	width: 2.25rem;
+}
+
+.box:hover {
+	cursor: pointer;
+
+	content: url('../SVG/box-clicked.png');
+}
+.o:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-29.svg');
+}
+.cam:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-30.svg');
+}
+.arrow:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-31.svg');
+}
+.sheets:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-32.svg');
+}
+.o-container:hover .image-text {
+	animation: drop-down-o 0.3s ease-in forwards;
+}
+.cam-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.arrow-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.sheets-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.box-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+
+.o-container:not(:hover) .image-text {
+	animation: rise-up-o 0.3s ease-out forwards;
+}
+.cam-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.arrow-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.sheets-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.box-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+@keyframes drop-down {
+	0% {
+		top: 6.5rem;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up {
+	0% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+
+@keyframes drop-down-o {
+	0% {
+		top: 6.5rem;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 7rem;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up-o {
+	0% {
+		top: 7rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+.logos-text {
+	font-size: 1.25rem;
+}
+
+.box-text {
+	left: 0.1rem;
+}
+.o-text {
+	left: 4rem;
+}
+.arrow-text {
+	left: 11rem;
+}
+.sheets-text {
+	left: 15rem;
+}
+.cam-text {
+	left: 6.8rem;
+}
+/* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
+.o-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 1;
+	color: #f28531;
+	top: 6.8rem;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+footer {
+	position: relative;
+	bottom: 0rem;
+}
+.footer {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 6fr 6fr 1fr 1fr 1fr 6fr 6fr;
+	grid-template-rows: 6rem 6rem;
+	justify-items: center;
+	align-items: center;
+	width: auto;
+}
+
+.footer-text {
+	position: relative;
+	grid-column: 1/-1;
+	grid-row: 1;
+	color: #f28531;
+	font-weight: 700;
+	align-self: flex-end;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
+	text-transform: lowercase;
+}
+.insta {
+	position: relative;
+	grid-row: 2;
+	grid-column: 3;
+	left: 2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.be {
+	grid-row: 2;
+	grid-column: 4;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.mail {
+	position: relative;
+	grid-row: 2;
+	grid-column: 5;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.dots {
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	background-color: #db0047;
+	margin: 0 0.3125rem;
+	grid-row: 1;
+	grid-column: 1/-1;
+	position: relative;
+	align-self: flex-end;
+	bottom: -0.125rem;
+	text-transform: lowercase;
+}
+
+.left-dot {
+	left: -5.3125rem;
+}
+
+.right-dot {
+	left: 5.3125rem;
+}
+/*  The above css is the template for all pages on this website */
+
+/* This part is to create the basic 9 circles */
+.circle {
+	width: 15.625rem;
+	height: 15.625rem;
+	border-radius: 50%;
+	border: 0.125rem solid #db0047;
+}
+
+.circles-cont {
+	display: inline-block;
+}
+
+/* Here we will design specifically section 1 Meaning the forst 3 circles */
+
+.white-circle1 {
+	position: relative;
+	top: -3.125rem;
+}
+.filled-circle1 {
+	position: relative;
+	background-color: #db0047;
+	z-index: -1;
+	top: -13.75rem;
+}
+.empty-circle1 {
+	position: relative;
+	top: -29.375rem;
+	z-index: -1;
+}
+
+.img1 {
+	width: 15.375rem;
+	height: 15.375rem;
+	border-radius: 50%;
+}
+/* Here we will design specifically section 2 Meaning the forst 3 circles */
+.white-circle2 {
+	position: relative;
+	top: 6.25rem;
+}
+.filled-circle2 {
+	position: relative;
+	background-color: #db0047;
+	top: -14.375rem;
+	z-index: -1;
+}
+.empty-circle2 {
+	position: relative;
+	top: -30rem;
+	z-index: -1;
+}
+
+.img2 {
+	width: 15.375rem;
+	height: 15.375rem;
+	border-radius: 50%;
+}
+
+/* Here we will design specifically section 1 Meaning the forst 3 circles */
+.white-circle3 {
+	background-color: white;
+	position: relative;
+	top: -3.125rem;
+}
+.filled-circle3 {
+	position: relative;
+	background-color: #db0047;
+	top: -13.75rem;
+	z-index: -1;
+}
+.empty-circle3 {
+	position: relative;
+	top: -29.375rem;
+	z-index: -1;
+}
+
+.img3 {
+	width: 15.375rem;
+	height: 15.375rem;
+	border-radius: 50%;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	gap: 4rem;
+}
+.section1 {
+	position: relative;
+	display: inline-block;
+	height: 18.75rem;
+	width: 18.75rem;
+	margin: 0;
+	padding: 0;
+	top: 1rem;
+	text-align: center;
+}
+.section2 {
+	position: relative;
+	display: inline-block;
+	height: 18.75rem;
+	width: 18.75rem;
+	margin: 0;
+	padding: 0;
+	top: 1rem;
+	text-align: center;
+}
+.section3 {
+	/* position: relative; */
+	display: inline-block;
+	position: relative;
+	height: 18.75rem;
+	width: 18.75rem;
+	margin: 0;
+	padding: 0;
+	top: 1rem;
+	text-align: center;
+}
+
+/* Now we will create the animations on hover */
+/* first white circle */
+.section1:hover .white-circle1 {
+	animation: white-down1 0.3s ease forwards;
+}
+
+.section1:not(:hover) .white-circle1 {
+	animation: white-up1 0.3s ease forwards;
+}
+
+/* first empty circle */
+.section1:hover .empty-circle1 {
+	animation: empty-down1 0.3s ease forwards;
+}
+
+.section1:not(:hover) .empty-circle1 {
+	animation: empty-up1 0.3s ease forwards;
+}
+
+/* First filled circle */
+.section1:hover .filled-circle1 {
+	animation: filled-up1 0.3s ease forwards;
+}
+
+.section1:not(:hover) .filled-circle1 {
+	animation: filled-down1 0.3s ease forwards;
+}
+@keyframes white-down1 {
+	0% {
+	}
+	100% {
+		top: 0rem;
+	}
+}
+
+@keyframes white-up1 {
+	0% {
+		top: 0;
+	}
+	100% {
+		top: -3.125rem;
+	}
+}
+
+@keyframes empty-down1 {
+	0% {
+		top: -29.375rem;
+	}
+	100% {
+		top: -26.25rem;
+	}
+}
+
+@keyframes empty-up1 {
+	0% {
+		top: -26.25rem;
+	}
+	100% {
+		top: -29.375rem;
+	}
+}
+
+@keyframes filled-down1 {
+	0% {
+		top: -21.875rem;
+	}
+	100% {
+		top: -13.75rem;
+	}
+}
+
+@keyframes filled-up1 {
+	0% {
+		top: -13.75rem;
+	}
+	100% {
+		top: -21.875rem;
+	}
+}
+
+/* Now the same for circles 2 */
+/* first white circle */
+.section2:hover .white-circle2 {
+	animation: white-up2 0.3s ease forwards;
+}
+
+.section2:not(:hover) .white-circle2 {
+	animation: white-down2 0.3s ease forwards;
+}
+
+/* first empty circle */
+.section2:hover .empty-circle2 {
+	animation: empty-up2 0.3s ease forwards;
+}
+
+.section2:not(:hover) .empty-circle2 {
+	animation: empty-down2 0.3s ease forwards;
+}
+
+/* First filled circle */
+.section2:hover .filled-circle2 {
+	animation: filled-down2 0.3s ease forwards;
+}
+
+.section2:not(:hover) .filled-circle2 {
+	animation: filled-up2 0.3s ease forwards;
+}
+@keyframes white-down2 {
+	0% {
+		top: 3.125rem;
+	}
+	100% {
+		top: 6.25rem;
+	}
+}
+
+@keyframes white-up2 {
+	0% {
+		top: 6.25rem;
+	}
+	100% {
+		top: 3.125rem;
+	}
+}
+
+@keyframes empty-down2 {
+	0% {
+		top: -33.125rem;
+	}
+	100% {
+		top: -30rem;
+	}
+}
+
+@keyframes empty-up2 {
+	0% {
+		top: -30rem;
+	}
+	100% {
+		top: -33.125rem;
+	}
+}
+
+@keyframes filled-down2 {
+	0% {
+		top: -14.375rem;
+	}
+	100% {
+		top: -7.5rem;
+	}
+}
+
+@keyframes filled-up2 {
+	0% {
+		top: -7.5rem;
+	}
+	100% {
+		top: -14.375rem;
+	}
+}
+
+/* Now this part is for circle 3 */
+
+/* first white circle */
+.section3:hover .white-circle3 {
+	animation: white-down3 0.3s ease forwards;
+}
+
+.section3:not(:hover) .white-circle3 {
+	animation: white-up3 0.3s ease forwards;
+}
+
+/* first empty circle */
+.section3:hover .empty-circle3 {
+	animation: empty-down3 0.3s ease forwards;
+}
+
+.section3:not(:hover) .empty-circle3 {
+	animation: empty-up3 0.3s ease forwards;
+}
+
+/* First filled circle */
+.section3:hover .filled-circle3 {
+	animation: filled-up3 0.3s ease forwards;
+}
+
+.section3:not(:hover) .filled-circle3 {
+	animation: filled-down3 0.3s ease forwards;
+}
+@keyframes white-down3 {
+	0% {
+	}
+	100% {
+		top: 0rem;
+	}
+}
+
+@keyframes white-up3 {
+	0% {
+		top: 0;
+	}
+	100% {
+		top: -3.125rem;
+	}
+}
+
+@keyframes empty-down3 {
+	0% {
+		top: -29.375rem;
+	}
+	100% {
+		top: -26.25rem;
+	}
+}
+
+@keyframes empty-up3 {
+	0% {
+		top: -26.25rem;
+	}
+	100% {
+		top: -29.375rem;
+	}
+}
+
+@keyframes filled-down3 {
+	0% {
+		top: -21.875rem;
+	}
+	100% {
+		top: -13.75rem;
+	}
+}
+
+@keyframes filled-up3 {
+	0% {
+		top: -13.75rem;
+	}
+	100% {
+		top: -21.875rem;
+	}
+}
+
+/* Text inside circle with their animation  */
+.text1 {
+	position: absolute;
+	left: 2.5rem;
+	top: 6.25rem;
+	font-size: 1.125rem;
+}
+
+.text2 {
+	position: absolute;
+	left: 1.875rem;
+	top: 9.375rem;
+	font-size: 1.125rem;
+}
+
+.text3 {
+	position: absolute;
+	left: 3.125rem;
+	top: 6.25rem;
+	font-size: 1.125rem;
+}
+
+@keyframes text-down1 {
+	100% {
+		top: 11.25rem;
+	}
+}
+@keyframes text-up2 {
+	100% {
+		top: 2.5rem;
+	}
+}
+@keyframes text-down3 {
+	100% {
+		top: 11.25rem;
+	}
+}
+
+.section1:hover .empty-circle1 .text1 {
+	animation: text-down1 0.32s ease forwards;
+}
+
+.section2:hover .empty-circle2 .text2 {
+	animation: text-up2 0.32s ease forwards;
+}
+.section3:hover .empty-circle3 .text3 {
+	animation: text-down3 0.32s ease forwards;
+}
+
+/* The following code is used for the animations of the text when not hovering */
+@keyframes text-up1 {
+	0% {
+		top: 11.25rem;
+	}
+	100% {
+		top: 6.25rem;
+	}
+}
+@keyframes text-down2 {
+	0% {
+		top: 2.5rem;
+	}
+	100% {
+		top: 9.375rem;
+	}
+}
+@keyframes text-up3 {
+	0% {
+		top: 11.25rem;
+	}
+	100% {
+		top: 6.25rem;
+	}
+}
+
+.section1:not(:hover) .empty-circle1 .text1 {
+	animation: text-up1 0.32s ease forwards;
+}
+
+.section2:not(:hover) .empty-circle2 .text2 {
+	animation: text-down2 0.32s ease forwards;
+}
+.section3:not(:hover) .empty-circle3 .text3 {
+	animation: text-up3 0.32s ease forwards;
+}
+
+.section1:hover {
+	cursor: pointer;
+}
+
+.section2:hover {
+	cursor: pointer;
+}
+
+.section3:hover {
+	cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+/* BELOW 1248px */
+@media (max-width: 78em) {
+	html {
+		font-size: 14px;
+	}
+}
+
+/* BELOW 1088px */
+@media (max-width: 68em) {
+	html {
+		font-size: 12px;
+	}
+}
+
+/* BELOW 936px */
+@media (max-width: 58.5em) {
+	html {
+		font-size: 11px;
+	}
+}
