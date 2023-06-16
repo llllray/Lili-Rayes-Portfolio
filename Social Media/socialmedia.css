@@ -1,0 +1,562 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	/* overflow-y: hidden; */
+}
+body {
+	background-color: #fff0ed;
+	font-family: 'Barlow', sans-serif;
+	color: #db0047;
+}
+main {
+	height: 21.875rem;
+}
+p {
+	font-weight: 700;
+}
+.container {
+	display: grid;
+	width: auto;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
+}
+img {
+	width: 6.25rem;
+}
+
+.logo {
+	position: relative;
+	grid-column: -1;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
+}
+.logo-txt {
+	position: relative;
+
+	grid-column: -1;
+	grid-row: 2;
+	justify-self: center;
+	font-size: 1.2rem;
+	letter-spacing: 0.19rem;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
+	color: #db0047;
+}
+
+a:link {
+	color: #db0047;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	font-size: 1.0625rem;
+	text-decoration: none;
+}
+
+.about:visited {
+	color: #db0047;
+}
+.about {
+	grid-column: -1;
+	grid-row: 3;
+	text-align: right;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
+	color: #db0047;
+	z-index: 1;
+	position: relative;
+	top: -0.625rem;
+}
+.contact {
+	grid-column: -1;
+	grid-row: 4;
+	text-align: right;
+	margin-right: 3.125rem;
+	color: #e12c65;
+	position: relative;
+	top: -1.5625rem;
+	z-index: 1;
+}
+.contact:visited {
+	color: #e12c65;
+}
+
+.image-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 0;
+	color: #f28531;
+}
+.cam {
+	position: relative;
+	top: -0.3125rem;
+}
+.box {
+	position: absolute;
+	left: 2rem;
+	top: 1.5rem;
+	width: 2.25rem;
+}
+
+.box:hover {
+	cursor: pointer;
+
+	content: url('../SVG/box-clicked.png');
+}
+.o:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-29.svg');
+}
+.cam:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-30.svg');
+}
+.arrow:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-31.svg');
+}
+.sheets:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-32.svg');
+}
+.o-container:hover .image-text {
+	animation: drop-down-o 0.3s ease-in forwards;
+}
+.cam-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.arrow-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.sheets-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.box-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+
+.o-container:not(:hover) .image-text {
+	animation: rise-up-o 0.3s ease-out forwards;
+}
+.cam-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.arrow-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.sheets-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.box-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+@keyframes drop-down {
+	0% {
+		top: 6.5rem;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up {
+	0% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+
+@keyframes drop-down-o {
+	0% {
+		top: 6.5rem;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 7rem;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up-o {
+	0% {
+		top: 7rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+.logos-text {
+	font-size: 1.25rem;
+}
+
+.box-text {
+	left: 0.1rem;
+}
+.o-text {
+	left: 4rem;
+}
+.arrow-text {
+	left: 11rem;
+}
+.sheets-text {
+	left: 15rem;
+}
+.cam-text {
+	left: 6.8rem;
+}
+/* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
+.cam-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 1;
+	color: #f28531;
+	top: 7.8rem;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+footer {
+	position: relative;
+	bottom: 0rem;
+}
+.footer {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 6fr 6fr 1fr 1fr 1fr 6fr 6fr;
+	grid-template-rows: 6rem 6rem;
+	justify-items: center;
+	align-items: center;
+	width: auto;
+}
+
+.footer-text {
+	position: relative;
+	grid-column: 1/-1;
+	grid-row: 1;
+	color: #f28531;
+	font-weight: 700;
+	align-self: flex-end;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
+	text-transform: lowercase;
+}
+.insta {
+	position: relative;
+	grid-row: 2;
+	grid-column: 3;
+	left: 2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.be {
+	grid-row: 2;
+	grid-column: 4;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.mail {
+	position: relative;
+	grid-row: 2;
+	grid-column: 5;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.dots {
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	background-color: #db0047;
+	margin: 0 0.3125rem;
+	grid-row: 1;
+	grid-column: 1/-1;
+	position: relative;
+	align-self: flex-end;
+	bottom: -0.125rem;
+	text-transform: lowercase;
+}
+
+.left-dot {
+	left: -5.3125rem;
+}
+
+.right-dot {
+	left: 5.3125rem;
+}
+/*  The above css is the template for all pages on this website */
+
+main {
+	display: flex;
+	width: auto;
+	gap: 15%;
+	justify-content: center;
+	align-items: center;
+}
+.first {
+	width: auto;
+	height: 25rem;
+}
+.second {
+	width: auto;
+	height: 25rem;
+}
+.circle {
+	position: relative;
+	width: 21.875rem;
+	height: 21.875rem;
+	border-radius: 50%; /* set the border-radius to 50% to create a circle */
+	border: 0.125rem solid #db0047; /* set the border to 0.625rem solid red */
+	background-color: #db0047;
+}
+
+.circle1 {
+	top: 0rem;
+	left: -4.375rem;
+	z-index: 1; /* set the z-index to 1 to ensure that the first circle is stacked above the second circle */
+	background-clip: content-box;
+	background-color: #fff0ed;
+}
+
+.circle2 {
+	top: -21.875rem;
+}
+.circle3 {
+	top: 0rem;
+	left: -4.375rem;
+	z-index: 1; /* set the z-index to 1 to ensure that the first circle is stacked above the second circle */
+	background-clip: content-box;
+	background-color: #fff0ed;
+}
+
+.circle4 {
+	top: -21.875rem;
+}
+
+.first:hover .circle2 {
+	animation: move-left 0.2s ease-in-out forwards;
+	cursor: pointer;
+}
+.first:hover .circle1 {
+	animation: move-right 0.2s ease-in-out forwards;
+	cursor: pointer;
+}
+.first:not(:hover) .circle2 {
+	animation: move-right1 0.2s ease-in-out forwards;
+	cursor: pointer;
+}
+.first:not(:hover) .circle1 {
+	cursor: pointer;
+
+	animation: move-left1 0.2s ease-in-out forwards;
+}
+.second:hover .circle4 {
+	cursor: pointer;
+
+	animation: move-left 0.2s ease-in-out forwards;
+}
+.second:hover .circle3 {
+	cursor: pointer;
+
+	animation: move-right 0.2s ease-in-out forwards;
+}
+.second:not(:hover) .circle4 {
+	cursor: pointer;
+
+	animation: move-right1 0.2s ease-in-out forwards;
+}
+.second:not(:hover) .circle3 {
+	cursor: pointer;
+
+	animation: move-left1 0.2s ease-in-out forwards;
+}
+
+@keyframes move-left {
+	0% {
+		left: 0;
+		color: #db0047;
+	}
+	100% {
+		left: -2.1875rem;
+		color: #fff0ed;
+	}
+}
+
+@keyframes move-right {
+	0% {
+		left: -4.375rem;
+		color: #db0047;
+	}
+	50% {
+		background-color: #db0047;
+		color: #fff0ed;
+	}
+
+	100% {
+		left: -2.1875rem;
+		background-color: #db0047;
+		color: #fff0ed;
+	}
+}
+
+@keyframes move-left1 {
+	0% {
+		left: -2.1875rem;
+	}
+	100% {
+		left: -4.375rem;
+		color: #db0047;
+	}
+}
+
+@keyframes move-right1 {
+	0% {
+		left: -2.1875rem;
+	}
+	20% {
+	}
+	100% {
+		left: 0rem;
+	}
+}
+
+.salon-img {
+	position: relative;
+	width: 16.25rem;
+	height: 16.25rem;
+	left: 1.875rem;
+	top: 1.875rem;
+	border: 0.125rem solid #db0047;
+}
+
+.circle1-text {
+	position: relative;
+	top: 1.875rem;
+	left: 6.25rem;
+	font-weight: 700;
+}
+
+@keyframes move-img-right {
+	0% {
+		left: 1.875rem;
+	}
+	100% {
+		left: 2.8125rem;
+	}
+}
+
+@keyframes move-img-left {
+	0% {
+		left: 2.8125rem;
+	}
+
+	100% {
+		left: 1.875rem;
+	}
+}
+.first:hover .salon-img {
+	animation: move-img-right 0.3s ease-in-out forwards;
+}
+
+.first:not(:hover) .salon-img {
+	animation: move-img-left 0.3s ease-in-out forwards;
+}
+
+.second:hover .salon-img {
+	animation: move-img-right 0.3s ease-in-out forwards;
+}
+
+.second:not(:hover) .salon-img {
+	animation: move-img-left 0.3s ease-in-out forwards;
+}
+@media (max-width: 75em) {
+	main {
+		position: relative;
+		top: 4%;
+	}
+	.second {
+		position: relative;
+		left: 5%;
+	}
+}
+
+@media (max-width: 62.5em) {
+	html {
+		font-size: 14px;
+	}
+}
+@media (max-width: 55.5em) {
+	html {
+		font-size: 12px;
+	}
+	main {
+		gap: 5%;
+	}
+	.second {
+		position: relative;
+		left: 5%;
+	}
+}
