@@ -1,0 +1,705 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: fit-content;
+	overflow-y: hidden;
+}
+body {
+	background-color: #fff0ed;
+	font-family: 'Barlow', sans-serif;
+	color: #db0047;
+}
+main {
+	height: 100%;
+}
+p {
+	font-weight: 700;
+}
+.container {
+	display: grid;
+	width: auto;
+	height: 12.5rem;
+	grid-template-columns: 3.75rem 3.75rem 3.75rem 3.75rem 3.75rem 1fr;
+	grid-template-rows: 6.25rem 1fr 1fr 1fr;
+}
+img {
+	width: 6.25rem;
+}
+
+.logo {
+	position: relative;
+	grid-column: -1;
+	width: 15.625rem;
+	height: 15.625rem;
+	top: -4.375rem;
+	margin-right: 1.875rem;
+}
+.logo-txt {
+	position: relative;
+
+	grid-column: -1;
+	grid-row: 2;
+	justify-self: center;
+	font-size: 1.2rem;
+	letter-spacing: 0.19rem;
+	margin-right: 1.875rem;
+	margin-bottom: 1.25rem;
+	top: -0.9375rem;
+	color: #db0047;
+}
+
+a:link {
+	color: #db0047;
+	font-family: 'Barlow', sans-serif;
+	font-weight: bold;
+	font-size: 1.0625rem;
+	text-decoration: none;
+}
+
+.about:visited {
+	color: #db0047;
+}
+.about {
+	grid-column: -1;
+	grid-row: 3;
+	text-align: right;
+	margin-right: 3.125rem;
+	margin-bottom: 1.25rem;
+	color: #db0047;
+	z-index: 1;
+	position: relative;
+	top: -0.625rem;
+}
+.contact {
+	grid-column: -1;
+	grid-row: 4;
+	text-align: right;
+	margin-right: 3.125rem;
+	color: #e12c65;
+	position: relative;
+	top: -1.5625rem;
+	z-index: 1;
+}
+.contact:visited {
+	color: #e12c65;
+}
+
+.image-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 0;
+	color: #f28531;
+}
+.cam {
+	position: relative;
+	top: -0.3125rem;
+}
+.box {
+	position: absolute;
+	left: 2rem;
+	top: 1.5rem;
+	width: 2.25rem;
+}
+
+.box:hover {
+	cursor: pointer;
+
+	content: url('../SVG/box-clicked.png');
+}
+.o:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-29.svg');
+}
+.cam:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-30.svg');
+}
+.arrow:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-31.svg');
+}
+.sheets:hover {
+	cursor: pointer;
+
+	content: url('../SVG/Lilis\ portfolio-icons[55]-32.svg');
+}
+.o-container:hover .image-text {
+	animation: drop-down-o 0.3s ease-in forwards;
+}
+.cam-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.arrow-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.sheets-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+.box-container:hover .image-text {
+	animation: drop-down 0.3s ease-in forwards;
+}
+
+.o-container:not(:hover) .image-text {
+	animation: rise-up-o 0.3s ease-out forwards;
+}
+.cam-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.arrow-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.sheets-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+.box-container:not(:hover) .image-text {
+	animation: rise-up 0.3s ease-out forwards;
+}
+@keyframes drop-down {
+	0% {
+		top: 6.5rem;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up {
+	0% {
+		top: 7.5rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+
+@keyframes drop-down-o {
+	0% {
+		top: 6.5rem;
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 7rem;
+		opacity: 1;
+	}
+}
+
+@keyframes rise-up-o {
+	0% {
+		top: 7rem;
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		top: 6.25rem;
+		opacity: 0;
+	}
+}
+.logos-text {
+	font-size: 1.25rem;
+}
+
+.box-text {
+	left: 0.1rem;
+}
+.o-text {
+	left: 4rem;
+}
+.arrow-text {
+	left: 11rem;
+}
+.sheets-text {
+	left: 15rem;
+}
+.cam-text {
+	left: 6.8rem;
+}
+/* change this text class and remove the image-text class from html to let the text stay and change the image in the html to the once colored orange */
+.arrow-text {
+	position: absolute;
+	height: auto;
+	transform: rotate(90deg);
+	opacity: 1;
+	color: #f28531;
+	top: 7.8rem;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+footer {
+	position: relative;
+	bottom: 6rem;
+}
+.footer {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 6fr 6fr 1fr 1fr 1fr 6fr 6fr;
+	grid-template-rows: 6rem 6rem;
+	justify-items: center;
+	align-items: center;
+	width: auto;
+}
+
+.footer-text {
+	position: relative;
+	grid-column: 1/-1;
+	grid-row: 1;
+	color: #f28531;
+	font-weight: 700;
+	align-self: flex-end;
+	bottom: -0.625rem;
+	border-bottom: 0.1875rem solid #f28531;
+	padding-bottom: 0.1875rem;
+	text-transform: lowercase;
+}
+.insta {
+	position: relative;
+	grid-row: 2;
+	grid-column: 3;
+	left: 2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.be {
+	grid-row: 2;
+	grid-column: 4;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.mail {
+	position: relative;
+	grid-row: 2;
+	grid-column: 5;
+	left: -2.5rem;
+	bottom: 0rem;
+	width: 6.875rem;
+	height: 6.875rem;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.dots {
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	background-color: #db0047;
+	margin: 0 0.3125rem;
+	grid-row: 1;
+	grid-column: 1/-1;
+	position: relative;
+	align-self: flex-end;
+	bottom: -0.125rem;
+	text-transform: lowercase;
+}
+
+.left-dot {
+	left: -5.3125rem;
+}
+
+.right-dot {
+	left: 5.3125rem;
+}
+/*  The above css is the template for all pages on this website */
+
+.section1 {
+	display: flex;
+	width: 100%;
+	height: fit-content;
+}
+
+/* Editing the first circle */
+.circle1 {
+	width: 26rem;
+	height: 26rem;
+	border-radius: 50%;
+	border: 2px #db0047 solid;
+	position: relative;
+	left: 10%;
+	top: 4rem;
+	z-index: 1;
+}
+.img1 {
+	width: 120%;
+	position: relative;
+	left: -25%;
+	top: -5%;
+}
+
+.p1 {
+	font-size: 1.2rem;
+	position: relative;
+	left: 50%;
+	top: -5%;
+}
+
+/* Editing the second part */
+
+.circle2 {
+	width: 26rem;
+	height: 26rem;
+	border-radius: 50%;
+	border: 2px #db0047 solid;
+	position: relative;
+	left: 10%;
+	top: 2rem;
+	margin-top: -10%;
+	z-index: 1;
+}
+.img2 {
+	width: 40%;
+	position: relative;
+	left: 30%;
+	top: -5%;
+}
+.circ2-img2 {
+	position: relative;
+	width: 39.1%;
+	z-index: -1;
+	left: -10.3%;
+	top: -5.7%;
+	border-radius: 10%;
+}
+.p2 {
+	font-size: 1.2rem;
+	position: relative;
+	left: 37%;
+	top: -2%;
+}
+
+/* Editing the Third part */
+
+.circle3 {
+	width: 26rem;
+	height: 26rem;
+	border-radius: 50%;
+	border: 2px #db0047 solid;
+	position: relative;
+	left: 10%;
+	top: 4rem;
+	z-index: 1;
+}
+.img3 {
+	width: 120%;
+	position: relative;
+	left: 5%;
+	top: -5%;
+}
+.p3 {
+	font-size: 1.2rem;
+	position: relative;
+	left: 37%;
+	top: -2%;
+}
+
+/* Now for the hovering effects */
+.circle1:hover {
+	animation: fill-circle 0.15s ease-in forwards;
+	cursor: pointer;
+}
+.circle2:hover {
+	animation: fill-circle 0.15s ease-in forwards;
+	cursor: pointer;
+}
+.circle3:hover {
+	animation: fill-circle 0.15s ease-in forwards;
+	cursor: pointer;
+}
+@keyframes fill-circle {
+	0% {
+		background-color: #fff0ed;
+	}
+	100% {
+		background-color: #db0047;
+	}
+}
+
+/* The text animations */
+
+@keyframes text-up {
+	0% {
+		top: -2%;
+	}
+	100% {
+		top: -66%;
+	}
+}
+
+@keyframes text-down {
+	0% {
+		top: -66%;
+	}
+	100% {
+		top: -2%;
+	}
+}
+@keyframes text-up2 {
+	0% {
+		top: -5%;
+	}
+	100% {
+		top: -95%;
+	}
+}
+
+@keyframes text-down2 {
+	0% {
+		top: -95%;
+	}
+	100% {
+		top: -5%;
+	}
+}
+.circle1:hover .p1 {
+	animation: text-up 0.15s ease-in forwards;
+}
+.circle2:hover .p2 {
+	animation: text-up2 0.15s ease-in forwards;
+}
+.circle3:hover .p3 {
+	animation: text-up 0.15s ease-in forwards;
+}
+
+.circle1 .p1 {
+	animation: text-down 0.15s ease-in forwards;
+}
+.circle2 .p2 {
+	animation: text-down2 0.15s ease-in forwards;
+}
+.circle3 .p3 {
+	animation: text-down 0.15s ease-in forwards;
+}
+
+/* Editing the responsiveness */
+@media (max-width: 91em) {
+	.circle1 {
+		left: 5%;
+	}
+	.circle2 {
+		left: 5%;
+	}
+	.circle3 {
+		left: 5%;
+	}
+}
+
+@media (max-width: 86.5em) {
+	.circle1 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle2 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle3 {
+		width: 24rem;
+		height: 24rem;
+	}
+}
+
+@media (max-width: 81.5em) {
+	html {
+		font-size: 15px;
+	}
+	.circle1 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle2 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle3 {
+		width: 24rem;
+		height: 24rem;
+	}
+}
+
+@media (max-width: 75em) {
+	html {
+		font-size: 14px;
+	}
+	.circle1 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle2 {
+		width: 24rem;
+		height: 24rem;
+	}
+	.circle3 {
+		width: 24rem;
+		height: 24rem;
+	}
+}
+
+@media (max-width: 70.6em) {
+	html {
+		font-size: 14px;
+	}
+	.circle1 {
+		width: 22rem;
+		height: 22rem;
+	}
+	.circle2 {
+		width: 22rem;
+		height: 22rem;
+	}
+	.circle3 {
+		width: 22rem;
+		height: 22rem;
+	}
+}
+
+@media (max-width: 66.25em) {
+	html {
+		font-size: 14px;
+	}
+	.circle1 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle2 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle3 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.p3 {
+		left: 20%;
+	}
+}
+
+@media (max-width: 60em) {
+	html {
+		font-size: 13px;
+	}
+	.circle1 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle2 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle3 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.p3 {
+		left: 20%;
+	}
+}
+
+@media (max-width: 55em) {
+	html {
+		font-size: 12px;
+	}
+	.circle1 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle2 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle3 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.p3 {
+		left: 20%;
+	}
+}
+
+@media (max-width: 51em) {
+	html {
+		font-size: 11px;
+	}
+	.circle1 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle2 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.circle3 {
+		width: 20rem;
+		height: 20rem;
+	}
+	.p3 {
+		left: 20%;
+	}
+}
+
+@media (max-width: 47em) {
+	html {
+		font-size: 11px;
+	}
+	.circle1 {
+		width: 18rem;
+		height: 18rem;
+	}
+	.circle2 {
+		width: 18rem;
+		height: 18rem;
+	}
+	.circle3 {
+		width: 18rem;
+		height: 18rem;
+	}
+	.p3 {
+		left: 20%;
+	}
+}
