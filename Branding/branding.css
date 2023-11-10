@@ -1,3 +1,5 @@
+/** @format */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -433,7 +435,7 @@ footer {
 main {
 	display: flex;
 	justify-content: center;
-	gap: 4rem;
+	gap: 0rem;
 }
 .section1 {
 	position: relative;
@@ -728,6 +730,13 @@ main {
 	position: absolute;
 	left: 3.125rem;
 	top: 6.25rem;
+	font-size: 1.125rem;
+}
+
+.text4 {
+	position: absolute;
+	left: 4rem;
+	top: 9.375rem;
 	font-size: 1.125rem;
 }
 

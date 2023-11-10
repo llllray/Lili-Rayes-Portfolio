@@ -18,12 +18,27 @@
 .mob-link-sec {
 	display: none;
 }
+.reels-mobile {
+	display: none;
+}
+
+.mob-h1 {
+	display: none;
+}
+
+.posts-mobile {
+	display: none;
+}
+.social-media--mob-text {
+	display: none;
+}
 @media (max-width: 41em) {
 	html,
 	body {
-		overflow: auto;
+		overflow: hidden;
 		overflow-y: scroll;
 		font-size: 11px;
+		height: 100vh;
 	}
 	.mobile-container {
 		display: inline-block;
@@ -34,9 +49,10 @@
 	.container1 {
 		flex-wrap: wrap;
 	}
-	.div1 {
+	.section4 {
 		display: none;
 	}
+
 	.div2 {
 		display: none;
 	}
@@ -117,7 +133,9 @@
 	.footer {
 		bottom: 0;
 	}
-
+	.footer1 {
+		display: grid;
+	}
 	main {
 		height: 100%;
 		position: relative;
@@ -223,120 +241,13 @@
 		display: none;
 	}
 	/* Editing the section5 newly created for mobile which containes all the elements */
-	.section5 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		justify-items: center;
-		align-items: center;
-		position: relative;
-		top: -2rem;
-	}
-	.mob-h1 {
-		color: #f28531;
-		font-size: 2rem;
-		position: relative;
-		left: 7%;
-		margin-bottom: 10px;
-		font-weight: 700;
-	}
-	.mob-img1 {
-		width: 60%;
-		position: relative;
-		height: auto;
-		border: 0.125rem #f28531 solid;
-	}
-	.mob-text-div {
-		width: 60%;
-		font-size: 2rem;
-		margin-top: 2rem;
-		height: auto;
-		color: #f28531;
-		margin-bottom: 50px;
-	}
-	.mob-text-p {
-		font-weight: 500;
-	}
-	.mob-text-h2 {
-		font-size: 2rem;
-		color: #f28531;
-		margin-bottom: 20px;
-	}
-	.mob-img2 {
-		width: 100%;
-		height: auto;
-		border: 0.125rem #f28531 solid;
-	}
-	.mob-img2-1 {
-		margin-bottom: 50px;
-	}
-	.mob-img3 {
-		width: 100%;
-		height: auto;
-		border-top: 2px;
-		border-bottom: 2px;
-		border-color: #f28531;
-		border-style: solid;
-		border-left: 0px;
-		border-right: 0px;
-	}
-	.mob-img3-1 {
-		margin-bottom: 50px;
-	}
-	.section4 {
-		grid-template-columns: 1fr;
-	}
-	.checkout {
-		left: 0;
-		font-weight: 700;
-	}
-	.big-circle {
-		display: none;
-	}
-
-	.animation-div1:hover .white-circle1 {
-		animation: none;
-	}
-
-	.animation-div1:not(:hover) .white-circle1 {
-		animation: none;
-	}
-
-	.animation-div2:hover .white-circle2 {
-		animation: none;
-	}
-
-	.animation-div2:not(:hover) .white-circle2 {
-		animation: none;
-	}
-
-	/* This part is for the red circes */
-	.animation-div1:hover .red-circle1 {
-		animation: none;
-	}
-
-	.animation-div1:not(:hover) .red-circle1 {
-		animation: none;
-	}
-
-	.animation-div2:hover .red-circle2 {
-		animation: none;
-	}
-
-	.animation-div2:not(:hover) .red-circle2 {
-		animation: none;
-	}
-	.footer {
-		position: relative;
-		top: -40rem;
-	}
 	.mob-link-sec {
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr;
 		position: absolute;
 		right: 0;
-		top: -1%;
+		top: -25%;
 	}
 	.mob-circ-div1 {
 		position: relative;
@@ -413,12 +324,145 @@
 	.mob-link-img {
 		border-radius: 50%;
 	}
+
+	/* Editing div1 for mobile version which is the big image with text under it */
+	.div1 {
+		position: relative;
+		top: -10rem;
+	}
+	.anime-div:hover .lofi-logo {
+		animation: none;
+	}
+
+	.small-circle1 {
+		display: none;
+	}
+
+	.small-circle2 {
+		display: none;
+	}
+
+	.anime-div:hover .text-div {
+		animation: none;
+	}
+
+	.text-div {
+		width: 100%;
+		font-size: 1.8rem;
+		margin-top: 1rem;
+		height: auto;
+		color: #f28531;
+		margin-bottom: 50px;
+		top: 0;
+		left: 15%;
+		white-space: nowrap;
+	}
+	.span1 {
+		display: none;
+	}
+	.lofi-logo {
+		width: 70%;
+		position: relative;
+		height: auto;
+		border: 0.15rem #f28531 solid;
+		left: 10%;
+	}
+	.mob-h1 {
+		display: block;
+		color: #f28531;
+		font-size: 2rem;
+		position: relative;
+		left: 7%;
+		margin-bottom: 10px;
+		font-weight: 700;
+	}
+
+	/* Editing social media mobile */
+	.sociol-media-posts {
+		position: relative;
+		top: -10rem;
+	}
+	.social-media-header {
+		display: none;
+	}
+	/* Reels part */
+	.reels {
+		gap: 2rem;
+	}
+	.reels-video {
+		width: 40%;
+		border: 0.15rem #f28531 solid;
+	}
+
+	.reels-video--crop {
+		width: 38%;
+	}
+
+	.social-media--text {
+		font-size: 1.5rem;
+		color: #f28531;
+	}
+
+	.social-media--text {
+		margin-bottom: 3%;
+	}
+
+	/* Story Part */
+	.story {
+		display: none;
+	}
+
+	.reels-mobile {
+		display: flex;
+		margin-bottom: 2rem;
+	}
+
+	/* Posts part */
+
+	.posts-mobile {
+		display: grid;
+	}
+	.remove {
+		display: none;
+	}
+	.posts {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		width: 90vw;
+	}
+
+	.posts img {
+		border: 0.15rem #f28531 solid;
+	}
+
+	/* Packaging  */
+
+	.packaging {
+		flex-direction: column-reverse;
+		gap: 2rem;
+
+		justify-content: center;
+		align-items: center;
+	}
+	.social-media--mob-text {
+		display: block;
+	}
+
+	.packaging img {
+		width: 95%;
+		height: auto;
+		border: solid 1px #f28531;
+	}
+
+	#straw-package {
+		width: 95%;
+	}
+	footer {
+		display: none;
+	}
 }
 
 @media (max-width: 28em) {
-	.mobile-about {
-		justify-self: center;
-	}
 	html {
 		font-size: 10px;
 	}
@@ -426,8 +470,12 @@
 		top: 17.5rem;
 		left: -6.85rem;
 	}
-	a:link {
-		font-size: 1.4rem;
+	.text-div {
+		font-size: 1.5rem;
+	}
+
+	.mob-link-sec {
+		top: -20%;
 	}
 	.right-dot {
 		left: 5.4rem;
@@ -438,12 +486,22 @@
 		top: 0rem;
 	}
 }
+
+@media (max-width: 25em) {
+	.mob-link-sec {
+		top: -25%;
+	}
+}
+
 @media (max-width: 21.25em) {
 	html {
 		font-size: 9px;
 	}
-	.mobile-about {
-		justify-self: baseline;
+	.mob-link-sec {
+		top: -40%;
+	}
+	.text-div {
+		white-space: wrap;
 	}
 	.right-dot {
 		left: 5.9rem;
@@ -453,48 +511,8 @@
 		left: -5.9rem;
 		top: 0rem;
 	}
-	.mob-h1 {
-		left: 2%;
-	}
 	.links-text {
 		top: 19rem;
 		left: -7.7rem;
-	}
-	.mob-h1 {
-		left: 0rem;
-	}
-
-	.mob-red-circ1 {
-		border: 0.125rem #f28531 solid;
-		border-radius: 50%;
-		background-color: #f28531;
-		width: 62.5px;
-		height: 62.5px;
-		position: relative;
-		top: -45%;
-		left: 1%;
-		z-index: -1;
-	}
-	.mob-red-circ2 {
-		border: 0.125rem #db0047 solid;
-		border-radius: 50%;
-		background-color: #db0047;
-		width: 62.5px;
-		height: 62.5px;
-		position: relative;
-		top: -45%;
-		left: 1%;
-		z-index: -1;
-	}
-	.mob-red-circ3 {
-		border: 0.125rem #db0047 solid;
-		border-radius: 50%;
-		background-color: #db0047;
-		width: 62.5px;
-		height: 62.5px;
-		position: relative;
-		top: -45%;
-		left: 1%;
-		z-index: -1;
 	}
 }

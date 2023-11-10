@@ -1,3 +1,5 @@
+/** @format */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -670,44 +672,42 @@ footer {
 	position: relative;
 }
 
-.letterhead-text {
-	position: relative;
-	text-align: center;
-	font-size: 1.25rem;
-}
-
 /* Circle with animations */
 
 .big-circle {
 	width: 34.375rem;
 	height: 34.375rem;
-	border-radius: 50%;
-	border: 0.125rem solid #db0047;
 	position: relative;
 	margin: auto;
+	display: flex;
+	gap: 3rem;
+	left: -8%;
+	margin-top: 20%;
 }
+
 .animation-div1 {
 	display: inline-block;
 	width: 12.3125rem;
 	height: 12.3125rem;
 	position: relative;
-	top: 9.375rem;
-	left: 2.5rem;
 }
 .animation-div2 {
 	display: inline-block;
 	width: 12.3125rem;
 	height: 12.3125rem;
 	position: relative;
-	top: 9.375rem;
-	left: 5rem;
 }
-.checkout {
-	font-size: 2.875rem;
-	font-weight: 300;
+
+.animation-div3 {
+	display: inline-block;
+	width: 12.3125rem;
+	height: 12.3125rem;
 	position: relative;
-	text-align: center;
-	top: 5rem;
+}
+.animation-div1:hover,
+.animation-div2:hover,
+.animation-div3:hover {
+	cursor: pointer;
 }
 
 .white-circle1 {
@@ -813,6 +813,13 @@ footer {
 	animation: white-circle-up 0.2s ease-in forwards;
 }
 
+.animation-div3:hover .white-circle2 {
+	animation: white-circle-down 0.2s ease-in forwards;
+}
+
+.animation-div3:not(:hover) .white-circle2 {
+	animation: white-circle-up 0.2s ease-in forwards;
+}
 /* This part is for the red circes */
 .animation-div1:hover .red-circle1 {
 	animation: red-circle-up 0.2s ease-in forwards;
@@ -828,6 +835,36 @@ footer {
 
 .animation-div2:not(:hover) .red-circle2 {
 	animation: red-circle-down 0.2s ease-in forwards;
+}
+
+.animation-div3:hover .red-circle2 {
+	animation: red-circle-up 0.2s ease-in forwards;
+}
+
+.animation-div3:not(:hover) .red-circle2 {
+	animation: red-circle-down 0.2s ease-in forwards;
+}
+
+/* media queries for responsiveness excluding mobile */
+@media (max-width: 78em) {
+	.big-circle {
+		gap: 1rem;
+		left: -5%;
+	}
+}
+
+@media (max-width: 72.5em) {
+	.big-circle {
+		gap: 1rem;
+		left: -2.5%;
+	}
+
+	.div6 {
+		margin: 0;
+	}
+	.letterhead {
+		width: 25rem;
+	}
 }
 
 @media (max-width: 70.625em) {

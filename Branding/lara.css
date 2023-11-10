@@ -1,3 +1,5 @@
+/** @format */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -571,45 +573,30 @@ footer {
 
 /* Circle animations */
 .section4 {
-	height: 37.5rem;
+	height: fit-content;
 	width: 100%;
 	display: grid;
 	justify-content: center;
+	margin-top: 5rem;
 }
-.animation-div1 {
+.animation-div {
 	display: inline-block;
 	width: 12.3125rem;
 	height: 12.3125rem;
 	position: relative;
-	top: 9.375rem;
-	left: 2.5rem;
-}
-.animation-div2 {
-	display: inline-block;
-	width: 12.3125rem;
-	height: 12.3125rem;
-	position: relative;
-	top: 9.375rem;
-	left: 5rem;
+	top: -10%;
 }
 .big-circle {
-	width: 34.375rem;
-	height: 34.375rem;
-	border-radius: 50%;
-	border: 0.125rem solid #db0047;
+	width: 90vw;
+	height: fit-content;
 	position: relative;
-	margin-top: 6.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
 }
 
-.checkout {
-	font-size: 2.875rem;
-	font-weight: 300;
-	position: relative;
-	left: 11.25rem;
-	top: 5rem;
-}
-
-.white-circle1 {
+.white-circle {
 	width: 12.5rem;
 	height: 12.5rem;
 	border-radius: 50%;
@@ -617,28 +604,7 @@ footer {
 	position: relative;
 }
 
-.red-circle1 {
-	width: 13.125rem;
-	height: 13.125rem;
-	border-radius: 50%;
-	border: 0.125rem solid #db0047;
-	background-color: #db0047;
-	position: relative;
-	z-index: -1;
-	top: -11.5625rem;
-	left: -0.3125rem;
-}
-
-.white-circle2 {
-	width: 12.5rem;
-	height: 12.5rem;
-	border-radius: 50%;
-	border: 0.125rem solid #db0047;
-	background-color: white;
-	position: relative;
-}
-
-.red-circle2 {
+.red-circle {
 	width: 13.125rem;
 	height: 13.125rem;
 	border-radius: 50%;
@@ -662,7 +628,7 @@ footer {
 	border-radius: 50%;
 }
 
-@keyframes white-circle-up1 {
+@keyframes white-circle-up {
 	0% {
 		top: 1.25rem;
 	}
@@ -671,7 +637,7 @@ footer {
 	}
 }
 
-@keyframes white-circle-down1 {
+@keyframes white-circle-down {
 	0% {
 		top: 0;
 	}
@@ -680,25 +646,7 @@ footer {
 	}
 }
 
-@keyframes white-circle-up2 {
-	0% {
-		top: 1.25rem;
-	}
-	100% {
-		top: 0;
-	}
-}
-
-@keyframes white-circle-down2 {
-	0% {
-		top: 0rem;
-	}
-	100% {
-		top: 1.25rem;
-	}
-}
-
-@keyframes red-circle-up1 {
+@keyframes red-circle-up {
 	0% {
 		top: -11.5625rem;
 	}
@@ -707,7 +655,7 @@ footer {
 	}
 }
 
-@keyframes red-circle-down1 {
+@keyframes red-circle-down {
 	0% {
 		top: -13.75rem;
 	}
@@ -715,38 +663,25 @@ footer {
 		top: -11.5625rem;
 	}
 }
-
-.animation-div1:hover .white-circle1 {
-	animation: white-circle-down1 0.2s ease-in forwards;
+.animation-div:hover {
+	cursor: pointer;
 }
 
-.animation-div1:not(:hover) .white-circle1 {
-	animation: white-circle-up1 0.2s ease-in forwards;
+.animation-div:hover .white-circle {
+	animation: white-circle-down 0.2s ease-in forwards;
 }
 
-.animation-div2:hover .white-circle2 {
-	animation: white-circle-down2 0.2s ease-in forwards;
-}
-
-.animation-div2:not(:hover) .white-circle2 {
-	animation: white-circle-up2 0.2s ease-in forwards;
+.animation-div:not(:hover) .white-circle {
+	animation: white-circle-up 0.2s ease-in forwards;
 }
 
 /* This part is for the red circes */
-.animation-div1:hover .red-circle1 {
-	animation: red-circle-up1 0.2s ease-in forwards;
+.animation-div:hover .red-circle {
+	animation: red-circle-up 0.2s ease-in forwards;
 }
 
-.animation-div1:not(:hover) .red-circle1 {
-	animation: red-circle-down1 0.2s ease-in forwards;
-}
-
-.animation-div2:hover .red-circle2 {
-	animation: red-circle-up1 0.2s ease-in forwards;
-}
-
-.animation-div2:not(:hover) .red-circle2 {
-	animation: red-circle-down1 0.2s ease-in forwards;
+.animation-div:not(:hover) .red-circle {
+	animation: red-circle-down 0.2s ease-in forwards;
 }
 
 /* Media queries for responsiveness */

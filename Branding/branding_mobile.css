@@ -1,4 +1,9 @@
-/***************************************************************************************************************************************/
+/**
+ * ***********************************************************************************************************************************
+ *
+ * @format
+ */
+
 /**************************************************************************************************************************************/
 /**********************************************     Mobile version under 700px     ***************************************************/
 .mobile-top {
@@ -77,9 +82,6 @@
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr;
 		grid-template-rows: 2fr 1fr;
-	}
-	.footer {
-		bottom: 0;
 	}
 
 	main {
@@ -273,17 +275,23 @@
 	}
 	.section1 {
 		z-index: 3;
-		left: 7.5rem;
+		left: 0rem;
+		top: 29rem;
 	}
 	.section2 {
 		z-index: 3;
-		left: 2rem;
-		top: -5.5rem;
+		left: 0rem;
+		top: -27rem;
 	}
 	.section3 {
 		z-index: 3;
-		left: 9rem;
-		top: -11rem;
+		left: 6rem;
+		top: -31rem;
+	}
+	.section4 {
+		z-index: 3;
+		top: -4rem;
+		left: 4rem;
 	}
 	/* Editing the white and red circles position */
 	.empty-circle1 {
@@ -310,8 +318,8 @@
 	}
 	.filled-circle1 {
 		position: relative;
-		left: -1rem;
-		top: -16rem;
+		top: -18.5rem;
+		left: 3rem;
 	}
 	.filled-circle2 {
 		position: relative;
@@ -323,9 +331,15 @@
 		top: -15.5rem;
 		left: -3rem;
 	}
+
+	.filled-circle4 {
+		position: relative;
+		left: -3rem;
+		top: -15rem;
+	}
 	.footer {
 		position: relative;
-		top: -5rem;
+		top: 11rem;
 	}
 }
 
@@ -354,17 +368,23 @@
 	/* Editing the circles position for smaller screens */
 	.section1 {
 		z-index: 3;
-		left: 7.5rem;
+		left: 0rem;
+		top: 29rem;
 	}
 	.section2 {
 		z-index: 3;
-		left: 2rem;
-		top: -7rem;
+		left: 0rem;
+		top: -30rem;
 	}
 	.section3 {
 		z-index: 3;
-		left: 10rem;
-		top: -14.4rem;
+		left: 6rem;
+		top: -35rem;
+	}
+	.section4 {
+		z-index: 3;
+		top: -4rem;
+		left: 4rem;
 	}
 	/* Editing the white and red circles position */
 	.empty-circle1 {
@@ -391,18 +411,12 @@
 	}
 	.filled-circle1 {
 		position: relative;
-		left: -1rem;
-		top: -16rem;
 	}
 	.filled-circle2 {
 		position: relative;
-		top: -16rem;
-		left: 3rem;
 	}
 	.filled-circle3 {
 		position: relative;
-		top: -15.5rem;
-		left: -3rem;
 	}
 }
 @media (max-width: 21.25em) {
@@ -419,18 +433,25 @@
 	/* Editing the circles position for smaller screens */
 	.section1 {
 		z-index: 3;
-		left: 7.5rem;
+		left: 0rem;
+		top: 27rem;
 	}
 	.section2 {
 		z-index: 3;
-		left: 2rem;
-		top: -9rem;
+		left: 0rem;
+		top: -35rem;
 	}
 	.section3 {
 		z-index: 3;
-		left: 10rem;
-		top: -18.8rem;
+		left: 6rem;
+		top: -42rem;
 	}
+	.section4 {
+		z-index: 3;
+		top: -4rem;
+		left: 4rem;
+	}
+
 	/* Editing the white and red circles position */
 	.empty-circle1 {
 		display: none;
@@ -456,8 +477,8 @@
 	}
 	.filled-circle1 {
 		position: relative;
-		left: -1rem;
-		top: -16rem;
+		left: 3rem;
+		top: -18.5rem;
 	}
 	.filled-circle2 {
 		position: relative;
@@ -469,8 +490,13 @@
 		top: -15.5rem;
 		left: -3rem;
 	}
+
+	.filled-circle4 {
+		left: -3rem;
+		top: -15rem;
+	}
 	.footer {
-		top: -10rem;
+		top: 6rem;
 	}
 	.links-text {
 		top: 19rem;
